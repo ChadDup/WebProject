@@ -1,41 +1,151 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>My Personal Website</title>    
-		<link href="style.css" rel="stylesheet" /> 
-	</head>
-	<body>
-		<header>
-			<h1>Chad Duplessis</h1>        
-			<h3>Professional Lifter</h3>        
-			<h4>(I bench 300)</h4>    
-		</header>
-		<nav>
-			<ul>            
-			<li><a href="index.html">About Me</a></li>          
-			<li><a href="courses.html">Courses Taken</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="contact.html">Contact Me</a></li>
-			<li><a 	href="https://scholar.google.com/citations?user=LXkW9XsAAAAJ&hl=en">Google Scholar Profile</a></li>      
-      			<li><a href="http://unh.edu">UNH Website</a></li>
-			</ul>    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>    
+    <link href="style.css" rel="stylesheet" /> 
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-		</nav>
-		<aside>
-			<img id="intro-image" src="gym.jpg" />Picture of me benching 300 like a beast
-		</aside>
-		<section> 
-			<p>
-				Im massive, lards a bum
-			</p>
-		</section>
-		<footer>
-			<a href="http://twitter.com"><img id="footer-image" src="twitter-logo.png" /></a>        
-			<a href="http://instagram.com"><img  id="footer-image" src="instagram-logo.png" /></a>    
-			<a href="http://facebook.com"><img  id="footer-image" src="facbook-logo.png"  /></a>  
-			<a href="http://youtube.com"><img  id="footer-image" src="youtube-logo.png" /></a>      
-			<a href="http://rss.com"><img  id="footer-image" src="rss-logo.png"  /></a>     
-			<br>Copyright &copy;Chad Duplessis   
-		</footer>
-	</body>
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header h3, header h4 {
+            margin: 5px 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0073e6;
+        }
+
+        aside {
+            background-color: #e4e4e4;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h3 {
+            text-align: center;
+        }
+
+        iframe {
+            display: block;
+            margin: 10px auto;
+            border: none;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        footer a img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: opacity 0.3s;
+        }
+
+        footer a img:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chad Duplessis</h1>        
+        <h3>Professional Lifter</h3>        
+        <h4>(I bench 300)</h4>    
+    </header>
+    <nav>
+        <ul>            
+            <li><a href="index.html">About Me</a></li>          
+            <li><a href="courses.html">Courses Taken</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="https://scholar.google.com/citations?user=LXkW9XsAAAAJ&hl=en">Google Scholar Profile</a></li>      
+            <li><a href="http://unh.edu">UNH Website</a></li>
+        </ul>    
+    </nav>
+    <aside>
+        <h3>Contact Me</h3>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFO8jYrfSQ5uFsli1MH7ABW8124aGZXqRkES3CpOgj7dXA2Q/viewform?embedded=true" width="640" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </aside>
+    <section> 
+        <p>
+            I’m massive, lards a bum
+        </p>
+    </section>
+    <footer>
+        <a href="http://twitter.com"><img src="twitter-logo.png" alt="Twitter" /></a>        
+        <a href="http://instagram.com"><img src="instagram-logo.png" alt="Instagram" /></a>    
+        <a href="http://facebook.com"><img src="facbook-logo.png" alt="Facebook" /></a>  
+        <a href="http://youtube.com"><img src="youtube-logo.png" alt="YouTube" /></a>      
+        <a href="http://rss.com"><img src="rss-logo.png" alt="RSS" /></a>     
+        <br>Copyright &copy; Chad Duplessis   
+    </footer>
+</body>
 </html>
+
